@@ -28,6 +28,7 @@
             android:padding="16dp">
 
             <TextView
+                style="@style/ProductNameLabel"
                 android:id="@+id/product_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,6 +36,7 @@
                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
             <TextView
+                style="@style/ProductNameLabel.Price"
                 android:id="@+id/product_price"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

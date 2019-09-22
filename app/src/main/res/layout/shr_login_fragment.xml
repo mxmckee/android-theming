@@ -28,15 +28,19 @@
             app:srcCompat="@drawable/shr_logo" />
 
         <TextView
+            style="@style/Theme.Shrine"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="132dp"
+            android:fontFamily="@font/convergence"
             android:text="@string/shr_app_name"
             android:textAllCaps="true"
-            android:textSize="16sp" />
+            android:textSize="32sp"
+            android:textStyle="bold"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/shr_hint_username">
@@ -49,6 +53,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout"
             android:id="@+id/password_text_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,21 +73,24 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/next_button"
+                style="@style/Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:fontFamily="@font/convergence"
                 android:text="@string/shr_button_next" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/cancel_button"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
+                style="@style/TextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
                 android:layout_toStartOf="@id/next_button"
                 android:layout_toLeftOf="@id/next_button"
+                android:fontFamily="@font/convergence"
                 android:text="@string/shr_button_cancel" />
 
         </RelativeLayout>
